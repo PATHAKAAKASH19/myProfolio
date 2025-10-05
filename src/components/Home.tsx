@@ -32,7 +32,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="absolute bottom-40 max-sm:bottom-20 max-md:hidden">
+        <div className="absolute bottom-40 max-sm:bottom-20 max-md:hidden ">
           <ThemeToggle />
         </div>
       </div>
