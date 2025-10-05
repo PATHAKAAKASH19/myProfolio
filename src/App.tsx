@@ -5,11 +5,11 @@ import NabBar from "./components/ui/NabBar";
 
 const App = () => {
   return (
-    <div className="relative box-border">
+    <div className="relative box-border transition-colors duration-800 ">
       <NabBar />
       <Home />
       <Projects />
-      <About/>
+      <About />
     </div>
   );
 }
