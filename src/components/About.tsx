@@ -24,6 +24,7 @@ export default function About() {
               alt="Akash Pathak Pic"
               className="w-full h-full object-cover rounded-[50%]"
               title="Akash Pathak"
+              loading="lazy"
             ></img>
           </div>
           <div className="w-[0.5px] bg-gray-600   self-stretch max-md:hidden dark:bg-white "></div>
