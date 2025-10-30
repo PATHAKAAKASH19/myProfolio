@@ -25,7 +25,7 @@ export default function Projects() {
                 loading="lazy"
               ></img>
             </div>
-            <p className="w-sm px-2  py-4 max-lg:w-[310px] max-lg:text-[13px] text-white/85">
+            <p className="w-sm px-2  py-4 max-lg:w-[310px] max-lg:text-[13px] ">
               Looks is a modern e-commerce app Having features like secure Jwt
               authentication, payment gateway , seller dashboard , modern ui,
               user dashboard with an seamless user experience
@@ -66,7 +66,7 @@ export default function Projects() {
                 loading="lazy"
               ></img>
             </div>
-            <p className="w-sm px-2  py-4 max-lg:w-[310px] max-lg:text-[13px] text-white/85">
+            <p className="w-sm px-2  py-4 max-lg:w-[310px] max-lg:text-[13px] ">
               Drawmify is a whiteboard app inspired by Excalidraw built using
               React, Rough.js, Zustand, and TailwindCSS. It allows users to draw
               freely with smooth, hand-drawn-style shapes.
@@ -109,7 +109,7 @@ export default function Projects() {
                 loading="lazy"
               ></img>
             </div>
-            <p className="w-sm px-2  py-4 max-lg:w-[310px] max-lg:text-[13px] text-white/85">
+            <p className="w-sm px-2  py-4 max-lg:w-[310px] max-lg:text-[13px] ">
               Popcorn is a movie discovery web app inspired by TMDB. The app
               features a clean and responsive UI. It allows users to explore
               movies, view details, and discover trending content seamlessly.
