@@ -11,7 +11,7 @@ export default function Projects() {
         <h1 className="font-caveat-brush text-5xl self-start py-9 max-md:pl-2 max-md:text-center">
           Projects
         </h1>
-        <div className="flex justify-start items-center gap-8  pb-8  max-md:flex-wrap max-lg:gap-5  max-lg:justify-center ">
+        <div className=" flex justify-start items-center gap-8  pb-8  max-md:flex-wrap max-lg:gap-5  max-md:justify-center">
           <div className="w-110 h-1/4 rounded-2xl  bg-white/20 backdrop-blur-md shadow-lg hover:scale-110 transition-transform duration-300 flex flex-col justify-evenly items-center gap-2 p-2 max-lg:w-[350px] max-sm:w-[330px] ">
             <h1 className="font-poppins text-[24px] pt-2 font-medium pb-2">
               Looks
@@ -95,8 +95,8 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="w-110 flex justify-start items-center gap-8  pb-8  max-md:flex-wrap max-lg:gap-5  max-lg:justify-center">
-          <div className="w-md h-1/4 rounded-2xl  bg-white/20 backdrop-blur-md shadow-lg hover:scale-110 transition-transform duration-300 flex flex-col justify-evenly items-center gap-2 p-2 max-lg:w-[350px] max-sm:w-[330px]">
+        <div className=" flex justify-start items-center gap-8  pb-8  max-md:flex-wrap max-lg:gap-5  max-md:justify-center">
+          <div className="w-110 h-1/4 rounded-2xl  bg-white/20 backdrop-blur-md shadow-lg hover:scale-110 transition-transform duration-300 flex flex-col justify-evenly items-center gap-2 p-2 max-lg:w-[350px] max-sm:w-[330px]">
             <h1 className="font-poppins text-[24px] pt-2 font-medium pb-2">
               Popcorn
             </h1>
@@ -110,9 +110,9 @@ export default function Projects() {
               ></img>
             </div>
             <p className="w-sm px-2  py-4 max-lg:w-[310px] max-lg:text-[13px] text-white/85">
-              Popcorn is a movie discovery web app inspired by TMDB.
-              The app features a clean and responsive UI. It allows users to explore movies, view
-              details, and discover trending content seamlessly.
+              Popcorn is a movie discovery web app inspired by TMDB. The app
+              features a clean and responsive UI. It allows users to explore
+              movies, view details, and discover trending content seamlessly.
             </p>
             <div className="flex gap-5 pb-3 pr-5 w-sm justify-end  max-lg:pr-10">
               <a

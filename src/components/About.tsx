@@ -103,11 +103,11 @@ export default function About() {
                   - Bachelor in computer science, Arsd College, DU,  (Year Of Passing: 2025)
                 </h2>
                 <h2>
-                - Senior Secondary School, CBSE, Delhi (Year of Passing: 2021)
+                - Senior Secondary School, CBSE, Faridabad (Year of Passing: 2021)
                 </h2>
 
                 <h2>
-                  - Secondary School, CBSE, Delhi (Year of Passing: 2019)</h2>
+                  - Secondary School, CBSE, Faridabad (Year of Passing: 2019)</h2>
               </div>
             </div>
             <div className="pb-6">
