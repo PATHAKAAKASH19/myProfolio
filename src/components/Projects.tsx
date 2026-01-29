@@ -1,18 +1,31 @@
 import { IconBrandGithub } from "@tabler/icons-react";
 import { IconLink } from "@tabler/icons-react";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 export default function Projects() {
+  const titleAnimation = useScrollAnimation({ threshold: 0.3 });
+  const project1Animation = useScrollAnimation({ threshold: 0.2 });
+  const project2Animation = useScrollAnimation({ threshold: 0.2 });
+  const project3Animation = useScrollAnimation({ threshold: 0.2 });
+
   return (
     <section
       id="projects"
       className=" bg-[url(/bg3.jpeg)] bg-no-repeat bg-cover bg-top-left flex justify-center px-5  font-poppins overflow-x-hidden dark:bg-[url(/bg3Black.jpeg)]"
     >
       <div className="relative  h-full w-4xl mb-15">
-        <h1 className="font-caveat-brush text-5xl self-start py-9 max-md:pl-2 max-md:text-center">
+        <h1
+          ref={titleAnimation.ref}
+          className={`font-caveat-brush text-5xl self-start py-9 max-md:pl-2 max-md:text-center scroll-slide-right ${titleAnimation.isVisible ? 'visible' : ''}`}
+        >
           Projects
         </h1>
         <div className=" flex justify-start items-center gap-8  pb-8  max-md:flex-wrap max-lg:gap-5  max-md:justify-center">
-          <div className="w-110 h-1/4 rounded-2xl  bg-white/20 backdrop-blur-md shadow-lg hover:scale-110 transition-transform duration-300 flex flex-col justify-evenly items-center gap-2 p-2 max-lg:w-[350px] max-sm:w-[330px] ">
+          <div
+            ref={project1Animation.ref}
+            className={`w-110 h-1/4 rounded-2xl  bg-white/20 backdrop-blur-md shadow-lg hover:scale-110 transition-transform duration-300 flex flex-col justify-evenly items-center gap-2 p-2 max-lg:w-[350px] max-sm:w-[330px] scroll-slide-up ${project1Animation.isVisible ? 'visible' : ''}`}
+            style={{ transitionDelay: '0.1s' }}
+          >
             <h1 className="font-poppins text-[24px] pt-2 font-medium pb-2">
               Looks
             </h1>
@@ -53,7 +66,11 @@ export default function Projects() {
               </a>
             </div>
           </div>
-          <div className="w-110 h-1/4 rounded-2xl  bg-white/20 backdrop-blur-md shadow-lg hover:scale-110 transition-transform duration-300 flex flex-col justify-evenly items-center gap-2 p-2 max-lg:w-[350px] max-sm:w-[330px] ">
+          <div
+            ref={project2Animation.ref}
+            className={`w-110 h-1/4 rounded-2xl  bg-white/20 backdrop-blur-md shadow-lg hover:scale-110 transition-transform duration-300 flex flex-col justify-evenly items-center gap-2 p-2 max-lg:w-[350px] max-sm:w-[330px] scroll-slide-up ${project2Animation.isVisible ? 'visible' : ''}`}
+            style={{ transitionDelay: '0.2s' }}
+          >
             <h1 className="font-poppins text-[24px] pt-2 font-medium pb-2">
               Drawmify
             </h1>
@@ -96,7 +113,11 @@ export default function Projects() {
           </div>
         </div>
         <div className=" flex justify-start items-center gap-8  pb-8  max-md:flex-wrap max-lg:gap-5  max-md:justify-center">
-          <div className="w-110 h-1/4 rounded-2xl  bg-white/20 backdrop-blur-md shadow-lg hover:scale-110 transition-transform duration-300 flex flex-col justify-evenly items-center gap-2 p-2 max-lg:w-[350px] max-sm:w-[330px]">
+          <div
+            ref={project3Animation.ref}
+            className={`w-110 h-1/4 rounded-2xl  bg-white/20 backdrop-blur-md shadow-lg hover:scale-110 transition-transform duration-300 flex flex-col justify-evenly items-center gap-2 p-2 max-lg:w-[350px] max-sm:w-[330px] scroll-slide-up ${project3Animation.isVisible ? 'visible' : ''}`}
+            style={{ transitionDelay: '0.1s' }}
+          >
             <h1 className="font-poppins text-[24px] pt-2 font-medium pb-2">
               Popcorn
             </h1>

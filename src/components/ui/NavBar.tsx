@@ -13,12 +13,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-export default function NabBar() {
+export default function NavBar() {
   return (
     <nav className="w-full flex h-30 justify-evenly items-center fixed top-0 px-5 backdrop-blur bg-white/10 z-20 max-md:h-20">
       <div className="w-5xl flex  justify-between items-center ">
         <div className="flex  items-center gap-3 ">
-          <div className="w-20 h-20  rounded-[50%] max-md:w-10 max-md:h-10 ">
+          <div className="w-15 h-15  rounded-[50%] max-md:w-10 max-md:h-10 ">
             <img
               src="/me.jpg"
               alt="user-photo"

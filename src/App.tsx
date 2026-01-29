@@ -1,12 +1,12 @@
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import NabBar from "./components/ui/NabBar";
+import NavBar from "./components/ui/NavBar";
 
 const App = () => {
   return (
     <div className="relative box-border transition-colors duration-800 ">
-      <NabBar />
+      <NavBar />
       <Home />
       <Projects />
       <About />

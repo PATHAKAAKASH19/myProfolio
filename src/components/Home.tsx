@@ -1,12 +1,15 @@
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import ThemeToggle from "./ui/ThemeToggle"
 
 export default function Home() {
+  const { ref, isVisible } = useScrollAnimation({ threshold: 0.2 });
+
   return (
     <section
       id="home"
       className="w-full h-screen flex justify-center items-center  gap-6 bg-[url(/bg.jpeg)] bg-no-repeat bg-cover bg-right box-border px-5 relative max-md:px-4 dark:bg-[url(/bgBlack.jpeg)] transition-colors duration-800 "
     >
-      <div className=" w-4xl flex flex-col items-center gap-5 ">
+      <div ref={ref} className={`w-4xl flex flex-col items-center gap-5 scroll-fade-in ${isVisible ? 'visible' : ''}`}>
         <h1 className="text-8xl font-caveat-brush max-lg:text-[80px] max-md:text-[65px] text-center max-sm:text-[64px]">
           hey, I 'm Akash Pathak !
         </h1>

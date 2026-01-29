@@ -4,8 +4,13 @@ import {
   IconBrandLinkedin,
   IconMail,
 } from "@tabler/icons-react";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 export default function About() {
+  const titleAnimation = useScrollAnimation({ threshold: 0.3 });
+  const imageAnimation = useScrollAnimation({ threshold: 0.3 });
+  const contentAnimation = useScrollAnimation({ threshold: 0.2 });
+
   return (
     <section
       id="about"
@@ -13,12 +18,18 @@ export default function About() {
       justify-center px-5 dark:bg-[url(/bg2Black.jpeg)] dark:bg-right pb-30"
     >
       <div className="relative h-full w-4xl">
-        <h1 className="font-caveat-brush text-5xl py-10 max-md:text-center">
+        <h1
+          ref={titleAnimation.ref}
+          className={`font-caveat-brush text-5xl py-10 max-md:text-center scroll-slide-right ${titleAnimation.isVisible ? 'visible' : ''}`}
+        >
           About me
         </h1>
 
         <div className="flex justify-between gap-4 items-start max-md:flex-col max-md:items-center ">
-          <div className="w-40 h-40 rounded-[50%]">
+          <div
+            ref={imageAnimation.ref}
+            className={`w-40 h-40 rounded-[50%] scroll-scale-in ${imageAnimation.isVisible ? 'visible' : ''}`}
+          >
             <img
               src="/me.jpg"
               alt="Akash Pathak Pic"
@@ -28,7 +39,10 @@ export default function About() {
             ></img>
           </div>
           <div className="w-[0.5px] bg-gray-600   self-stretch max-md:hidden dark:bg-white "></div>
-          <div className="w-3/4 max-md:w-[320px] max-md:text-[13px] max-md:text-center font-poppins">
+          <div
+            ref={contentAnimation.ref}
+            className={`w-3/4 max-md:w-[320px] max-md:text-[13px] max-md:text-center font-poppins scroll-slide-left ${contentAnimation.isVisible ? 'visible' : ''}`}
+          >
             <p className="pb-5 ">
               Full stack Developer based in India focused on designing engaging
               UI, building interactive experiences & bringing products to life
@@ -40,7 +54,7 @@ export default function About() {
               fully responsive web applications.
             </p>
             <p className="pb-5">
-              I love doing strenght traning and in my spare time i like
+              I love doing strength training and in my spare time I like
               exploring new places, watching anime and science fiction movies
             </p>
 
@@ -103,7 +117,7 @@ export default function About() {
                   - Bachelor in computer science, Arsd College, DU,  (Year Of Passing: 2025)
                 </h2>
                 <h2>
-                - Senior Secondary School, CBSE, Faridabad (Year of Passing: 2021)
+                  - Senior Secondary School, CBSE, Faridabad (Year of Passing: 2021)
                 </h2>
 
                 <h2>
