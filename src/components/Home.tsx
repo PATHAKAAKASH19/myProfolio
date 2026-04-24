@@ -26,7 +26,7 @@ export default function Home() {
             View My Work
           </a>
           <a
-            href="/myresume2.pdf"
+            href="/myResume2.pdf"
             target="_black"
             rel="noopener noreferrer"
             className="w-40 h-12 flex justify-center items-center rounded-2xl bg-white text-black font-medium hover:scale-110 transition-transform duration-300 max-sm:text-[13px]"
